@@ -38,7 +38,21 @@
                      , <&macro_tap &kp W>
                      , <&macro_release &kp RALT>;
         };
+
+        /* Edit macros */
+        copy:  copy_macro  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(C)>; };
+        cut:   cut_macro   { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(X)>; };
+        paste: paste_macro { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(V)>; };
     };
+
+    /* Combos – same fingers as on the Moonlander */
+    combos {
+        compatible = "zmk,combos";
+        combo_copy  { timeout-ms = <50>; key-positions = <20 21>; bindings = <&copy>;  }; // X+C
+        combo_paste { timeout-ms = <50>; key-positions = <21 22>; bindings = <&paste>; }; // C+V
+        combo_cut   { timeout-ms = <50>; key-positions = <19 20>; bindings = <&cut>;   }; // Z+X
+    };
+};
 
 #define HRML(k1,k2,k3,k4) &ht_gui 0 k1  &ht_alt 0 k2  &sht LSHFT k3  &ht_ctl 0 k4
 #define HRMR(k1,k2,k3,k4) &ht_ctl 0 k1  &sht RSHFT k2  &ht_alt 0 k3  &ht_gui 0 k4
