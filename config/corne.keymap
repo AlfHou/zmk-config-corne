@@ -41,18 +41,19 @@
                         >;
                 };
 
-                raise_layer {
-                        display-name = "Raise Layer";
+   ///// &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+                navigation {
+                        display-name = "Navigation Layer";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &trans &trans &trans &trans   &trans   &screenshot        &trans   &trans   &trans          &trans     &trans &trans 
+   &trans &trans &trans &trans   &trans   &trans      &kp LEFT &kp DOWN &kp UP          &kp RIGHT  &trans &kp K_PLAY_PAUSE 
+   &trans &trans &trans &trans   &trans   &trans      &trans   &trans   &kp K_PREVIOUS  &kp K_NEXT &trans &trans
+                             &trans &trans &trans    &trans &trans    &trans
                         >;
                 };
         };
@@ -106,6 +107,17 @@
                 bindings = <&macro_press &kp RALT>
                         , <&macro_tap &kp W>
                         , <&macro_release &kp RALT>;
+                };
+                screenshot: screenshot {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                wait-ms = <0>;
+                tap-ms = <0>;
+                bindings = <&macro_press &kp LGUI>
+                        , <&macro_press  &kp LSHFT>
+                        , <&macro_tap &kp S>
+                        , <&macro_release &kp LGUI>
+                        , <&macro_release &kp LSHFT>;
                 };
 
                 /* Edit macros */
