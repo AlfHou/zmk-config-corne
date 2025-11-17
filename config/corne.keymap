@@ -20,10 +20,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB  &kp Q       &kp W  &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P   &none
-   &kp ESC  &hml LGUI A &hml LALT S  &hml LCTRL D   &hml LSHFT F  &kp G    &kp H   &hmr RSHFT J   &hmr RCTRL K   &hmr RALT L   &hmr RGUI SEMI   &nor_2
-   &none &kp Z       &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &nor_1 &nor_0
-                  &mo 1 &kp SPACE &kp LSHFT   &kp RET &kp BACKSPACE &mo 2
+   &kp TAB  &kp Q       &kp W  &lt 2 E   &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P   &none
+   &kp ESC  &hml LGUI A &hml LALT S  &hml LCTRL D   &hml LSHFT F  &lt 1 G    &lt 1 H   &hmr RSHFT J   &hmr RCTRL K   &hmr RALT L   &hmr RGUI SEMI   &nor_2
+   &tog 2  &kp Z       &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &nor_1 &nor_0
+                  &mo 1 &kp SPACE &kp LSHFT   &kp RET &kp BACKSPACE &mo 1
                         >;
                 };
                 symbol {
