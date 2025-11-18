@@ -14,25 +14,15 @@
 
                 default_layer {
                         display-name = "Default Layer";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp TAB  &kp Q       &kp W  &lt 2 E   &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P   &td0
-   &kp ESC  &hml LGUI A &hml LALT S  &hml LCTRL D   &hml LSHFT F  &lt 1 G    &lt 1 H   &hmr RSHFT J   &hmr RCTRL K   &hmr RALT L   &hmr RGUI SEMI   &nor_2
+   &kp ESC  &hml LGUI A &hml LALT S  &hml LCTRL D   &hml LSHFT F  &lt 1 G    &lt 1 H   &hmr RSHFT J   &hmr RCTRL K   &hmr LALT L   &hmr RGUI SEMI   &nor_2
    &tog 2  &kp Z       &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &nor_1 &nor_0
                   &mo 1 &kp SPACE &kp LSHFT   &kp RET &kp BACKSPACE &mo 1
                         >;
                 };
                 symbol {
                         display-name = "Symobol Layer";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans &kp GRAVE  &kp AT_SIGN  &kp LEFT_BRACE       &kp RIGHT_BRACE        &kp PIPE    &kp CARET    &kp 7  &kp 8 &kp 9  &kp DOLLAR    &trans
    &trans &hml LGUI EXCL   &hml LALT ASTERISK &hml LCTRL LEFT_PARENTHESIS  &hml LSHFT RIGHT_PARENTHESIS &kp EQUAL   &kp HASH     &kp 4 &kp 5 &kp 6  &kp AMPERSAND &kp KP_DOT
@@ -41,14 +31,8 @@
                         >;
                 };
 
-   ///// &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
                 navigation {
                         display-name = "Navigation Layer";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans &trans &trans &trans   &trans   &screenshot        &trans   &trans   &trans          &trans     &trans &trans 
    &trans &trans &trans &trans   &trans   &trans      &kp LEFT &kp DOWN &kp UP          &kp RIGHT  &trans &kp K_PLAY_PAUSE 
@@ -58,11 +42,6 @@
                 };
                 bluetooth {
                         display-name = "Bluetooth";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   macro_tap_toggle_layer|
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4        &bt BT_CLR_ALL   &none   &none    &none     &none &none 
    &none &none &none &none   &none   &none      &none &none &none &none &none &none 
