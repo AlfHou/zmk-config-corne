@@ -90,7 +90,7 @@
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&none>, <&sl 4>;
+                        bindings = <&kp SINGLE_QUOTE>, <&sl 4>;
                 };
         };
 
