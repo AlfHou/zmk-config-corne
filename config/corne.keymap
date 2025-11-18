@@ -39,7 +39,7 @@
                 navigation {
                         display-name = "Navigation Layer";
                         bindings = <
-   &mt F1 1 &mt f F2 2 &mt F3 3 &mt F4 4   &mt F5 5   &mt F6 6        &mt F7 7   &mt F8 8   &mt F9 9          &mt F10 0     &kp F11 &kp F12
+   &mt F1 1 &mt F2 2 &mt F3 3 &mt F4 4   &mt F5 5   &mt F6 6        &mt F7 7   &mt F8 8   &mt F9 9          &mt F10 0     &kp F11 &kp F12
    &trans &screenshot &trans &trans   &trans   &trans      &kp LEFT &kp DOWN &kp UP          &kp RIGHT  &trans &kp K_PLAY_PAUSE 
    &trans &trans &trans &trans   &trans   &trans      &trans   &trans   &kp K_PREVIOUS  &kp K_NEXT &trans &trans
                              &trans &trans &trans    &trans &trans    &trans
