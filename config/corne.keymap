@@ -24,16 +24,16 @@
    &kp TAB  &kp Q       &kp W  &lt NAVIGATION E   &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P   &td0
    &kp ESC  &hml LGUI A &hml LALT S  &hml LCTRL D   &hml LSHFT F  &lt SYMBOL G    &lt SYMBOL H   &hmr RSHFT J   &hmr RCTRL K   &hmr LALT L   &hmr RGUI SEMI   &nor_2
    &none &kp Z       &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &nor_1 &nor_0
-                  &mo SYMBOL &kp SPACE &kp LSHFT   &kp RET &kp BACKSPACE &mo SYMBOL
+                 &kp SPACE &kp LSHFT &mo SYMBOL    &mo SYMBOL &kp RET &kp BACKSPACE 
                         >;
                 };
                 symbol {
                         display-name = "Symobol Layer";
                         bindings = <
-   &trans &kp GRAVE  &kp AT_SIGN  &kp LEFT_BRACE       &kp RIGHT_BRACE        &kp PIPE    &kp CARET    &kp N7  &kp N8 &kp N9  &kp DOLLAR    &trans
+   &trans &kp GRAVE  &kp AT_SIGN  &kp LEFT_BRACE       &kp RIGHT_BRACE        &kp PIPE    &kp CARET    &kp N7  &kp N8 &kp N9  &kp DOLLAR    &kp N0
    &trans &hml LGUI EXCL   &hml LALT ASTERISK &hml LCTRL LEFT_PARENTHESIS  &hml LSHFT RIGHT_PARENTHESIS &kp EQUAL   &kp HASH     &kp N4 &kp N5 &kp N6  &kp AMPERSAND &kp KP_DOT
    &trans  &kp TILDE  &kp PLUS     &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &kp PERCENT &kp KP_EQUAL &kp N1 &kp N2 &kp N3  &kp MINUS     &kp SLASH
-                                    &trans   &trans  &trans      &trans &trans &kp N0
+                                    &trans   &trans  &trans      &trans &trans &trans 
                         >;
                 };
                 navigation {
