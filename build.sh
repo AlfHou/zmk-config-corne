@@ -31,8 +31,9 @@ build_shield() {
         --user "$(id -u):$(id -g)" \
         "${DOCKER_IMAGE}" \
         bash -c "
-            mkdir -p ~/.cmake/packages/Zephyr
+            mkdir -p ~/.cmake/packages/Zephyr ~/.cmake/packages/Zephyr-sdk
             echo '/zmk-config/.zmk/zephyr/share/zephyr-package/cmake' > ~/.cmake/packages/Zephyr/zephyr_zmk
+            echo '/opt/zephyr-sdk-0.16.9/cmake' > ~/.cmake/packages/Zephyr-sdk/zephyr_sdk
             west build \
                 ${pristine_flag} \
                 --build-dir '${build_dir}' \
